@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, f
 from sklearn import svm
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
-data=pd.read_csv("/Users/kathit/Desktop/python programs/Breast_cancer_data.csv")
+data=pd.read_csv("Breast_cancer_data.csv")
 x = data[['mean_radius', 'mean_texture', 'mean_perimeter', 'mean_area', 'mean_smoothness']]
 y = data['diagnosis']
 scaler=StandardScaler()
